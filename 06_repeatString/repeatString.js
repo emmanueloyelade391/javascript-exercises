@@ -12,7 +12,7 @@ const repeatString = function(string, num) {
   return repeatedString; 
 };
 
-console.log(repeatString("goodbye", -1));
+console.log(repeatString("hey", 100));
 
 // Do not edit below this line
 module.exports = repeatString;
