@@ -1,16 +1,23 @@
-const removeFromArray = function(array, item) {
-  if (!array.includes(item)) {
-    return `Error. ${item} does not exist.`
+const removeFromArray = function(array, ...items) {
+  console.log(items);
+
+  for (let i = 0; i < items.length; i++){
+    if (!array.includes(items[i])) {
+    return `Error. ${items[i]} does not exist.`
+    }
   }
+ 
+  for (let i = 0; i < items.length; i++) {
+    let itemIndex = array.indexOf(items[i]);
 
-  const itemIndex = array.indexOf(item);
-
-  array.splice(itemIndex, 1);
+    array.splice(itemIndex, 1);
+  }
+  
 
   return array;
 };
 
-console.log(removeFromArray([1, 2, 3, 4], 3));
+console.log(removeFromArray([1, 2, 3, 4], 3, 2));
 
 // Do not edit below this line
 module.exports = removeFromArray;
