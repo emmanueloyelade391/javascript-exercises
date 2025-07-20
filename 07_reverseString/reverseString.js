@@ -26,7 +26,7 @@ const reverseString = function(string) {
   return result;
 }
 
-console.log(reverseString("hello there"));
+console.log(reverseString("'123! abc! Hello, Odinite.'"));
 
 // Do not edit below this line
 module.exports = reverseString;
