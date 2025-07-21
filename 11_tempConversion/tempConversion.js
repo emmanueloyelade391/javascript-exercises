@@ -9,7 +9,7 @@ const convertToFahrenheit = function(temp) {
 };
 
 console.log(convertToCelsius(-100));
-console.log(convertToFarnheit(0)); 
+console.log(convertToFahrenheit(73.2)); 
 
 // Do not edit below this line
 module.exports = {
