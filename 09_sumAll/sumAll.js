@@ -7,9 +7,6 @@ const sumAll = function(x, y) {
     return "ERROR";
   }
 
-  console.log(typeof x);
-  console.log(typeof y);
-
   let sum = 0;
 
   if (x > y) {
