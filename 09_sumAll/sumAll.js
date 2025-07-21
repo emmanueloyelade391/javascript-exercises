@@ -1,7 +1,12 @@
 const sumAll = function(x, y) {
   if (x < 0 || y < 0) {
     return "ERROR";
+  } else if ((x !== Math.floor(x) || x !== Math.ceil(x)) || (y !== Math.floor(y) || y !== Math.ceil(y))) {
+    return "ERROR";
   }
+
+  console.log(typeof x);
+  console.log(typeof y);
 
   let sum = 0;
 
@@ -18,7 +23,7 @@ const sumAll = function(x, y) {
   return sum;
 };
 
-console.log(sumAll(10, -4));
+console.log(sumAll(2.5, 4));
 
 // Do not edit below this line
 module.exports = sumAll;
