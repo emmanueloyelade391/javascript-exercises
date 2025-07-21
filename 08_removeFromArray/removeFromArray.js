@@ -1,6 +1,4 @@
 const removeFromArray = function(array, ...items) {
-  console.log(items);
-
   for (let i = 0; i < items.length; i++){
     if (!array.includes(items[i])) {
     return `Error. ${items[i]} does not exist.`
@@ -17,7 +15,7 @@ const removeFromArray = function(array, ...items) {
   return array;
 };
 
-console.log(removeFromArray([1, 2, 3, 4], 3, 2));
+console.log(removeFromArray([1, 2, 2, 3], 2)); //Continue working on this exercise tomorrow
 
 // Do not edit below this line
 module.exports = removeFromArray;
