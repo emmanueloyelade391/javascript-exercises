@@ -3,10 +3,13 @@ const convertToCelsius = function(temp) {
   return convertedTemp;
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(temp) {
+  const convertedTemp = +(temp * (9/5) + 32).toFixed(1);
+  return convertedTemp;
 };
 
 console.log(convertToCelsius(-100));
+console.log(convertToFarnheit(0)); 
 
 // Do not edit below this line
 module.exports = {
