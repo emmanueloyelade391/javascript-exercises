@@ -10,7 +10,8 @@ const removeFromArray = function(array, ...items) {
   return resultArray;
 };
 
-console.log(removeFromArray([1, 2, 3], "1", 3)); //Continue working on this exercise tomorrow
+console.log(removeFromArray([1, 2, 3], "1", 3));
+//I completed this exrcise, but I cheated by looking at the solution first and copying it.
 
 // Do not edit below this line
 module.exports = removeFromArray;
