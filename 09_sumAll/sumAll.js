@@ -1,4 +1,8 @@
 const sumAll = function(x, y) {
+  if (x < 0 || y < 0) {
+    return "ERROR";
+  }
+
   let sum = 0;
 
   if (x > y) {
@@ -14,7 +18,7 @@ const sumAll = function(x, y) {
   return sum;
 };
 
-console.log(sumAll(2, 4000));
+console.log(sumAll(10, -4));
 
 // Do not edit below this line
 module.exports = sumAll;
