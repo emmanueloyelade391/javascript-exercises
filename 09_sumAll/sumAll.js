@@ -25,7 +25,7 @@ const sumAll = function(x, y) {
   return sum;
 };
 
-console.log(sumAll(10, "90"));
+console.log(sumAll(10, [90, 1]));
 
 // Do not edit below this line
 module.exports = sumAll;
