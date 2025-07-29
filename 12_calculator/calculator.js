@@ -22,7 +22,7 @@ const multiply = function(array) {
   return array.reduce((total, item) => total * item, 1);
 };
 
-const arrProduct = [2, 4];
+const arrProduct = [2, 4, 6, 8, 10, 12, 14];
 
 console.log(multiply(arrProduct));
 
