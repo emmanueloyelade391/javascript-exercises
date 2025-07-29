@@ -35,7 +35,7 @@ const power = function(x, y) {
   return result;
 };
 
-console.log(power(4, 3));
+console.log(power(3, 10));
 
 const factorial = function() {
 	
