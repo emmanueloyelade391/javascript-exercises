@@ -2,7 +2,7 @@ const add = function(x, y) {
 	return x + y;
 };
 
-console.log(add(0, 0));
+console.log(add(2, 2));
 
 const subtract = function() {
 	
