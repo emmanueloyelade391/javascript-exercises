@@ -14,7 +14,7 @@ const sum = function(array) {
 	return array.reduce((total, item) => total + item, 0);
 };
 
-arr = [];
+arr = [7];
 
 console.log(sum(arr));
 
