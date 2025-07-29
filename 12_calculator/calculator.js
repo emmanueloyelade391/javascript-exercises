@@ -14,13 +14,17 @@ const sum = function(array) {
 	return array.reduce((total, item) => total + item, 0);
 };
 
-arr = [1, 3, 5, 7, 9];
+const arr = [1, 3, 5, 7, 9];
 
 console.log(sum(arr));
 
-const multiply = function() {
-
+const multiply = function(array) {
+  return array.reduce((total, item) => total * item, 1);
 };
+
+const arrProduct = [2, 4];
+
+console.log(multiply(arrProduct));
 
 const power = function() {
 	
