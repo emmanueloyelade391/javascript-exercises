@@ -26,9 +26,16 @@ const arrProduct = [2, 4, 6, 8, 10, 12, 14];
 
 console.log(multiply(arrProduct));
 
-const power = function() {
-	
+const power = function(x, y) {
+  let result = 1;
+  for (let i = 0; i < y; i++) {
+    result *= x;
+  }
+
+  return result;
 };
+
+console.log(power(4, 3));
 
 const factorial = function() {
 	
