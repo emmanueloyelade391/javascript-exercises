@@ -4,9 +4,11 @@ const add = function(x, y) {
 
 console.log(add(2, 6));
 
-const subtract = function() {
-	
+const subtract = function(x, y) {
+  return x - y;
 };
+
+console.log(10, 4);
 
 const sum = function() {
 	
