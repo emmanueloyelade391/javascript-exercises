@@ -10,9 +10,13 @@ const subtract = function(x, y) {
 
 console.log(subtract(-8, 7));
 
-const sum = function() {
-	
+const sum = function(array) {
+	return array.reduce((total, item) => total + item, 0);
 };
+
+arr = [];
+
+console.log(sum(arr));
 
 const multiply = function() {
 
