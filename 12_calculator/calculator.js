@@ -8,7 +8,7 @@ const subtract = function(x, y) {
   return x - y;
 };
 
-console.log(10, 4);
+console.log(subtract(-10, -4));
 
 const sum = function() {
 	
