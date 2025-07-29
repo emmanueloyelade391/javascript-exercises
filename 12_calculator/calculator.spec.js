@@ -19,7 +19,7 @@ describe('subtract', () => {
     expect(calculator.subtract(10, 4)).toBe(6);
   });
 
-  test.skip('subtracts negative numbers', () => {
+  test('subtracts negative numbers', () => {
     expect(calculator.subtract(-10, -4)).toBe(-6);
   });
 
