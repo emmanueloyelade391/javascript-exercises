@@ -42,6 +42,14 @@ const factorial = function(x) {
   if (x === 0) {
     return result;
   }
+  for (let i = x; i > 0; i--) {
+    if (x === 0) {
+      result *= 1;
+    }
+    result *= x;
+  }
+
+  return result;
 };
 
 console.log(factorial(0));
