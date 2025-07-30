@@ -46,13 +46,13 @@ const factorial = function(x) {
     if (x === 0) {
       result *= 1;
     }
-    result *= x;
+    result *= i;
   }
 
   return result;
 };
 
-console.log(factorial(0));
+console.log(factorial(2));
 // Do not edit below this line
 module.exports = {
   add,
