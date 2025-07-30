@@ -52,7 +52,7 @@ const factorial = function(x) {
   return result;
 };
 
-console.log(factorial(2));
+console.log(factorial(5));
 // Do not edit below this line
 module.exports = {
   add,
