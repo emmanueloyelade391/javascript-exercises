@@ -37,10 +37,14 @@ const power = function(x, y) {
 
 console.log(power(3, 10));
 
-const factorial = function() {
-	
+const factorial = function(x) {
+	let result = 1;
+  if (x === 0) {
+    return result;
+  }
 };
 
+console.log(factorial(0));
 // Do not edit below this line
 module.exports = {
   add,
