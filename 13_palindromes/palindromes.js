@@ -1,19 +1,20 @@
 const palindromes = function (string) {
-  let front = string[0];
-  let end = string.at(-1);
-  for (let i = 0; i < string.length; i++) {
-    if (front !== end) {
-      return false;
-    }
-    front = string[i];
-    console.log(front);
-    end = string.at(-(i + 1));
-    console.log(end);
-  }
-  return true; 
+   let left = string[0];
+   let right = string.length - 1;
+
+   while (left < right) {
+      if (left != right) {
+         return false;
+      }
+
+      left++;
+      right--;
+   }
+
+   return true;
 };
 
-console.log(palindromes("racecar"));
+palindromes("racecar!");
 
 // Do not edit below this line
 module.exports = palindromes;
