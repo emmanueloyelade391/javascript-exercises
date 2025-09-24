@@ -3,7 +3,7 @@ const palindromes = function (string) {
    let right = string.length - 1;
 
    while (left < right) {
-      if (left != right) {
+      if (string[left] != string[right]) {
          return false;
       }
 
@@ -14,7 +14,7 @@ const palindromes = function (string) {
    return true;
 };
 
-console.log(palindromes("A car, a man, a maraca."));
+console.log(palindromes("Animal loots foliated detail of stool lamina."));
 
 // Do not edit below this line
 module.exports = palindromes;
