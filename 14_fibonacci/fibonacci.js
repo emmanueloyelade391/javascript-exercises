@@ -7,10 +7,10 @@ const fibonacci = function(num) {
     fibonacciNums[i] = fibonacciNums[i - 1] + fibonacciNums[i - 2];
   }
 
-  return fibonacciNums[num]
+  return fibonacciNums[num];
 };
 
-console.log(fibonacci(4));
+console.log(fibonacci(6));
 
 // Do not edit below this line
 module.exports = fibonacci;
