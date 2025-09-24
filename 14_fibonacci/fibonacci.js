@@ -10,7 +10,7 @@ const fibonacci = function(num) {
   return fibonacciNums[num];
 };
 
-console.log(fibonacci(6));
+console.log(fibonacci(10));
 
 // Do not edit below this line
 module.exports = fibonacci;
