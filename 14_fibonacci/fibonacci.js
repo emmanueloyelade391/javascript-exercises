@@ -24,7 +24,7 @@ const fibonacci = function(num) {
   return fibonacciNums[newNum];
 };
 
-console.log(fibonacci("1"));
+console.log(fibonacci("2"));
 
 // Do not edit below this line
 module.exports = fibonacci;
