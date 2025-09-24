@@ -1,4 +1,8 @@
 const fibonacci = function(num) {
+  if (num < 0) {
+    return "OOPS";
+  }
+  
   if (num == 0) {
     return 0;
   }
@@ -18,7 +22,7 @@ const fibonacci = function(num) {
   return fibonacciNums[num];
 };
 
-console.log(fibonacci(0));
+console.log(fibonacci(-25));
 
 // Do not edit below this line
 module.exports = fibonacci;
