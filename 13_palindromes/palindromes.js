@@ -14,7 +14,7 @@ const palindromes = function (string) {
    return true;
 };
 
-palindromes("racecar!");
+palindromes("Racecar!");
 
 // Do not edit below this line
 module.exports = palindromes;
