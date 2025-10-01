@@ -17,7 +17,7 @@ const palindromes = function (string) {
    return true;
 };
 
-console.log(palindromes("ZZZZ car, a man, a maracaz."));
+console.log(palindromes("rac3e3car"));
 
 // Do not edit below this line
 module.exports = palindromes;
