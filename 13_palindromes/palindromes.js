@@ -1,7 +1,6 @@
 const palindromes = function (string) {
    let newString = string.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g, "").toLowerCase().replaceAll(" ", "");
 
-   console.log(newString);
    let left = 0;
    let right = newString.length - 1;
 
