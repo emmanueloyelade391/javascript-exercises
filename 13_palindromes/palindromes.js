@@ -1,9 +1,12 @@
 const palindromes = function (string) {
-   let left = string[0];
-   let right = string.length - 1;
+   let newString = string.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g, "").toLowerCase().replaceAll(" ", "");
+
+   console.log(newString);
+   let left = 0;
+   let right = newString.length - 1;
 
    while (left < right) {
-      if (string[left] != string[right]) {
+      if (newString[left] !== newString[right]) {
          return false;
       }
 
@@ -14,7 +17,7 @@ const palindromes = function (string) {
    return true;
 };
 
-console.log(palindromes("Animal loots foliated detail of stool lamina."));
+console.log(palindromes("ZZZZ car, a man, a maracaz."));
 
 // Do not edit below this line
 module.exports = palindromes;
