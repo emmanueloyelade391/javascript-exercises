@@ -1,11 +1,14 @@
 const getTheTitles = function(array) {
-let results = []
+/*let results = []
 for (let item of array) {
   let title = item.title;
   results.push(title);
-}
 
-return results;
+return results;*/
+
+return array.map(item => {
+  return item.title;
+})
 };
 
 const books = [
