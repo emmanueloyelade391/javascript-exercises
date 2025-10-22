@@ -1,7 +1,21 @@
 const findTheOldest = function(array) {
-  array.sort((a, b) =>(a.yearOfDeath - a.yearOfBirth) - (b.yearOfDeath - b.yearOfBirth));
+  currentYear = new Date();
+  currentYear = currentYear.getFullYear();
+
+  array.sort((a, b) => {
+    if ("yearOfDeath" in a === false) {
+      return ((currentYear - a.yearOfBirth) - (b.yearOfDeath - b.yearOfBirth));
+    }
+
+    if ("yearOfDeath" in b === false) {
+      return ((a.yearOfDeath - a.yearOfBirth) - (currentYear - b.yearOfBirth));
+    }
+    
+    return (a.yearOfDeath - a.yearOfBirth) - (b.yearOfDeath - b.yearOfBirth);
+  });
+  
   return array.at(-1);
-};
+}
 
 const people = [
   {
